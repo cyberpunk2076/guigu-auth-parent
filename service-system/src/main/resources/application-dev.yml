@@ -1,0 +1,15 @@
+#配置端口号
+server:
+  port: 8800
+#配置连接数据库相关信息
+spring:
+  datasource:
+    username: root
+    password: 12138
+    url: jdbc:mysql://localhost:3306/guigu-auth
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#配置再控制台输入日志，打印SQL语句
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: com.atguigu.model.system
